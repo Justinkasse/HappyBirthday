@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
                 ) {
                     GreetingImage(
                         message = "HAPPY BIRTHDAY SAM!",
-                        from="from KASSE",
+                        from = "from Kasse",
                         modifier = Modifier
                     )
 
@@ -57,7 +57,7 @@ fun GreetingText(message: String,from:String, modifier: Modifier = Modifier) {
     ) {
         Text(
             text = message,
-            fontSize = 100.sp,
+            fontSize = 70.sp,
             lineHeight = 116.sp,
             textAlign = TextAlign.Center,
             modifier = modifier
@@ -86,7 +86,7 @@ fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) 
         )
         GreetingText(
             message = message,
-            from = from,
+            from = "From Kasse",
             modifier = modifier.fillMaxSize().padding(8.dp)
         )
     }
@@ -98,6 +98,6 @@ fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) 
 @Composable
 fun BirthdayCardPreview() {
     HappyBirthdayTheme {
-        GreetingImage(message="HAPPY BIRTHDAY SAM!",from="from KASSE")
+        GreetingImage(message = "HAPPY BIRTHDAY SAM!", from= "From Kasse")
     }
 }
